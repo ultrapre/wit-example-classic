@@ -20,7 +20,7 @@ jobs:
     - name: Build with Gradle
       run: |
         ./gradlew build
-		zip -r app/build/outputs/apk.zip app/build/outputs/apk
+        zip -r app/build/outputs/apk.zip app/build/outputs/apk
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
